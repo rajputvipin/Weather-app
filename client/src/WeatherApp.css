@@ -1,0 +1,55 @@
+/* Main app container */
+.weather-app {
+  text-align: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 20px;
+  transition: all 0.3s ease;
+}
+
+.weather-app.dark-mode {
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+}
+
+/* Content container */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title styling */
+.app-title {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+/* Error message styling */
+.error-message {
+  margin: 20px auto;
+  max-width: 500px;
+  color: #e74c3c;
+  background-color: #fadbd8;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Loading text */
+.loading-text {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 10px;
+  }
+  
+  .app-title {
+    font-size: 2rem;
+  }
+}
